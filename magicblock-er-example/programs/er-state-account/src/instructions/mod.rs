@@ -7,6 +7,9 @@ pub use update_user::*;
 pub mod update_vrf;
 pub use update_vrf::*;
 
+pub mod update_vrf_er;
+pub use update_vrf_er::*;
+
 pub mod update_commit;
 pub use update_commit::*;
 

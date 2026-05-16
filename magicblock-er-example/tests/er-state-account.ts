@@ -30,6 +30,16 @@ describe("er-state-account", () => {
     program.programId
   )[0];
   const defaultVrfQueue = new PublicKey("Cuj97ggrhhidhbu39TijNVqE74xvKJ69gDervRUXAxGh");
+  const defaultEphemeralVrfQueue = new PublicKey("5hBR571xnXppuCPveTrctfTU7tJLSN94nq7kv7FRK5Tc");
+
+  const fetchUserAccountOnEr = async () => {
+    const accountInfo = await providerEphemeralRollup.connection.getAccountInfo(userAccount);
+    if (!accountInfo) {
+      throw new Error("User account not found on Ephemeral Rollup");
+    }
+
+    return program.coder.accounts.decode("userAccount", accountInfo.data);
+  };
 
   it("Is initialized!", async () => {
     // Add your test here.
@@ -98,6 +108,30 @@ describe("er-state-account", () => {
   );
 
     console.log("\nUser Account State Updated: ", txHash);
+  });
+
+  it("Update State with VRF inside ER!", async () => {
+    const before = await fetchUserAccountOnEr();
+
+    let tx = await program.methods.requestVrfUpdateEr(9).accountsPartial({
+      user: providerEphemeralRollup.wallet.publicKey,
+      userAccount: userAccount,
+      oracleQueue: defaultEphemeralVrfQueue,
+    })
+    .transaction();
+
+    tx.feePayer = providerEphemeralRollup.wallet.publicKey;
+
+    tx.recentBlockhash = (await providerEphemeralRollup.connection.getLatestBlockhash()).blockhash;
+    tx = await providerEphemeralRollup.wallet.signTransaction(tx);
+    const txHash = await providerEphemeralRollup.sendAndConfirm(tx, [], {skipPreflight: false});
+
+    console.log("\nER VRF State Update Requested: ", txHash);
+
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+
+    const after = await fetchUserAccountOnEr();
+    console.log("User Account ER VRF Data: ", before.data.toString(), "->", after.data.toString());
   });
 
   it("Commit and undelegate from Ephemeral Rollup!", async () => {

@@ -49,6 +49,41 @@ export type ErStateAccount = {
       ]
     },
     {
+      "name": "callbackVrfUpdateEr",
+      "discriminator": [
+        3,
+        2,
+        154,
+        0,
+        133,
+        188,
+        248,
+        163
+      ],
+      "accounts": [
+        {
+          "name": "vrfProgramIdentity",
+          "signer": true,
+          "address": "9irBy75QS2BN81FUgXuHcjqceJJRuc9oDkAe8TKVvvAw"
+        },
+        {
+          "name": "userAccount",
+          "writable": true
+        }
+      ],
+      "args": [
+        {
+          "name": "randomness",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "close",
       "discriminator": [
         98,
@@ -408,6 +443,90 @@ export type ErStateAccount = {
           "name": "oracleQueue",
           "writable": true,
           "address": "Cuj97ggrhhidhbu39TijNVqE74xvKJ69gDervRUXAxGh"
+        },
+        {
+          "name": "programIdentity",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  105,
+                  100,
+                  101,
+                  110,
+                  116,
+                  105,
+                  116,
+                  121
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "vrfProgram",
+          "address": "Vrf1RNUjXmQGjmQrQLvJHs9SNkvDJEsRVFPkfSQUwGz"
+        },
+        {
+          "name": "slotHashes",
+          "address": "SysvarS1otHashes111111111111111111111111111"
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "clientSeed",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "requestVrfUpdateEr",
+      "discriminator": [
+        22,
+        151,
+        184,
+        214,
+        187,
+        239,
+        208,
+        101
+      ],
+      "accounts": [
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "userAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  117,
+                  115,
+                  101,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "user"
+              }
+            ]
+          }
+        },
+        {
+          "name": "oracleQueue",
+          "writable": true,
+          "address": "5hBR571xnXppuCPveTrctfTU7tJLSN94nq7kv7FRK5Tc"
         },
         {
           "name": "programIdentity",

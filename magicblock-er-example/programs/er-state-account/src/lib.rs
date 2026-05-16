@@ -44,6 +44,21 @@ pub mod er_state_account {
         Ok(())
     }
 
+    pub fn request_vrf_update_er(ctx: Context<RequestVrfUpdateEr>, client_seed: u8) -> Result<()> {
+        ctx.accounts.request_vrf_update_er(client_seed)?;
+
+        Ok(())
+    }
+
+    pub fn callback_vrf_update_er(
+        ctx: Context<CallbackVrfUpdateEr>,
+        randomness: [u8; 32],
+    ) -> Result<()> {
+        ctx.accounts.callback_vrf_update_er(randomness)?;
+
+        Ok(())
+    }
+
     pub fn update_commit(ctx: Context<UpdateCommit>, new_data: u64) -> Result<()> {
         ctx.accounts.update_commit(new_data)?;
 

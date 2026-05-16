@@ -1,0 +1,12 @@
+/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/deps/serde-5c3c0fc34558c08d.d: /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/lib.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/integer128.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/mod.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/de.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/ser.rs /Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/build/serde-38573ef633db05d9/out/private.rs
+
+/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/deps/libserde-5c3c0fc34558c08d.rmeta: /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/lib.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/integer128.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/mod.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/de.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/ser.rs /Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/build/serde-38573ef633db05d9/out/private.rs
+
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/lib.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/integer128.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/mod.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/de.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.227/src/private/ser.rs:
+/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/build/serde-38573ef633db05d9/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/build/serde-38573ef633db05d9/out

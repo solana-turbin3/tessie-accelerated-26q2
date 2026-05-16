@@ -1,0 +1,10 @@
+/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/deps/log-a7645e402ea97801.d: /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/lib.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/macros.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/serde.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/__private_api.rs
+
+/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/deps/liblog-a7645e402ea97801.rlib: /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/lib.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/macros.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/serde.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/__private_api.rs
+
+/Users/tiancaiyuan/Dev/solana/turbine3/turbine-accelerated/tessie-accelerated-26q2/magicblock-er-example/target/debug/deps/liblog-a7645e402ea97801.rmeta: /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/lib.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/macros.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/serde.rs /Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/__private_api.rs
+
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/lib.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/macros.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/serde.rs:
+/Users/tiancaiyuan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.28/src/__private_api.rs:

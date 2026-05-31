@@ -569,6 +569,54 @@ export type ErStateAccount = {
       ]
     },
     {
+      "name": "scheduledUpdate",
+      "discriminator": [
+        201,
+        133,
+        65,
+        119,
+        123,
+        158,
+        149,
+        16
+      ],
+      "accounts": [
+        {
+          "name": "user",
+          "relations": [
+            "userAccount"
+          ]
+        },
+        {
+          "name": "userAccount",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  117,
+                  115,
+                  101,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "user"
+              }
+            ]
+          }
+        }
+      ],
+      "args": [
+        {
+          "name": "newData",
+          "type": "u64"
+        }
+      ]
+    },
+    {
       "name": "undelegate",
       "discriminator": [
         131,

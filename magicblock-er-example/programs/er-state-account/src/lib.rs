@@ -29,6 +29,12 @@ pub mod er_state_account {
         Ok(())
     }
 
+    pub fn scheduled_update(ctx: Context<ScheduledUpdate>, new_data: u64) -> Result<()> {
+        ctx.accounts.scheduled_update(new_data)?;
+
+        Ok(())
+    }
+
     pub fn request_vrf_update(ctx: Context<RequestVrfUpdate>, client_seed: u8) -> Result<()> {
         ctx.accounts.request_vrf_update(client_seed)?;
 

@@ -4,6 +4,9 @@ pub use init_user::*;
 pub mod update_user;
 pub use update_user::*;
 
+pub mod scheduled_update;
+pub use scheduled_update::*;
+
 pub mod update_vrf;
 pub use update_vrf::*;
 
